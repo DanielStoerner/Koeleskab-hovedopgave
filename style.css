@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+/* Sektion 2 vælg pakke */
+.section2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #647df9;
+    padding: 20px;
+}
+.wrapper{
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.wrapper .table{
+    background:#fff;
+    width: calc(19% - 10px);
+    padding: 30px;
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 1px 9px 52px -10px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 9px 52px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 9px 52px -10px rgba(0,0,0,0.75);
+}
+
+@media (max-width: 1020px){
+    .wrapper .table{
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media (max-width: 698px){
+    .wrapper .table{
+       width: 100%;
+    }
+}
+
+.table .pris-sektion{
+display: flex;
+justify-content: center;
+}
+
+.pris-sektion .pris-area{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.pris-area .indre{
+height: 100%;
+width: 100%;
+border-radius: 50%;
+border: 3px solid #fff;
+color: #fff;
+line-height: 117px;
+text-align: center;
+}
+
+
+
+.pris-area .indre .pris{
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: 15px;
+   
+}
+
+.table .pakke-navn {
+    width: 100%;
+    height: 2px;
+    margin: 35px 0;
+    position: relative;
+}
+
+.table .pakke-navn::before{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 15px;
+    transform: translate(-50%, -50%);
+
+}
+
+.table .features li{
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features li .liste-navn{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.features li .icon{
+    font-size: 15px;
+
+}
+
+.features li .icon.check{
+    color: #2db94d;
+
+}
+
+.pakke1-farve{
+    color: #ffd861;
+}
+.pakke2-farve{
+    color: #a26bfa;
+}
+.pakke3-farve{
+    color: #43ef8b;
+}
+.pakke4-farve{
+    color: #4a60de;
+}
+.pakke5-farve{
+    color: #c85e21;
+}
+
+.table .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.table .btn button{
+    width: 80%;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+
+.table ::selection{
+    color: #fff;
+}
+.pakke1 ::selection,
+.pakke1 .pris-area,
+.pakke1 .indre
+{
+    background: #ffd861;
+}
+
+.pakke1 .btn button{
+    background: #fff;
+    color: #ffd861;
+    border: 2px solid #ffd861;
+}
+
+.pakke1 .btn button:hover{
+    color: #fff;
+    background-color: #ffd861;
+}
+.pakke2 ::selection,
+.pakke2 .pris-area,
+.pakke2 .indre
+{
+    background: #a26bfa;
+}
+
+.pakke2 .btn button{
+    background: #fff;
+    color: #a26bfa;
+    border: 2px solid #a26bfa;
+}
+
+.pakke2 .btn button:hover{
+    color:#fff;
+    background: #a26bfa;
+}
+.pakke3 ::selection,
+.pakke3 .pris-area,
+.pakke3 .indre
+{
+    background: #43ef8b;
+}
+
+.pakke3 .btn button{
+    background: #fff;
+    color: #43ef8b;
+    border: 2px solid #43ef8b;
+}
+
+.pakke3 .btn button:hover{
+    color:#fff;
+    background: #43ef8b;
+}
+
+.pakke4 ::selection,
+.pakke4 .pris-area,
+.pakke4 .indre,
+.pakke4 .btn button{
+    background: #4a60de;
+
+}
+
+
+
+.pakke5 ::selection,
+.pakke5 .pris-area,
+.pakke5 .indre
+{
+    background: #c85e21;
+}
+
+.pakke5 .btn button{
+    background: #fff;
+    color: #c85e21;
+    border: 2px solid #c85e21;
+}
+
+.pakke5 .btn button:hover{
+    color:#fff;
+    background: #c85e21;
+}
+
+
+.pakke1 .pakke-navn{
+    background: #ffecb3;
+}
+.pakke2 .pakke-navn{
+    background: #d0b3ff;
+}
+.pakke3 .pakke-navn{
+    background: #baf8d4;
+}
+.pakke4 .pakke-navn{
+    background: #939dd6;
+}
+.pakke5 .pakke-navn{
+    background: #cba38b;
+}
+
+.pakke1 .pakke-navn::before{
+    content: "Tier 1";
+}
+.pakke2 .pakke-navn::before{
+    content: "Tier 2";
+}
+.pakke3 .pakke-navn::before{
+    content: "Tier 3";
+}
+.pakke4 .pakke-navn::before{
+    content: "Tier 4";
+}
+.pakke5 .pakke-navn::before{
+    content: "Tier 5";
+}
+
+.table .ribbon{
+ height: 150px;
+ width: 150px;
+ position: absolute;
+ top: -10px;
+ left: -10px;
+ overflow: hidden;
+}
+.table .ribbon::before,
+.table .ribbon::after{
+    position: absolute;
+    content: "";
+    display: block;
+    border: 7px solid #4606ac;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.table .ribbon::before{
+    top:-4px;
+    right: 25px;
+}
+
+.table .ribbon::after{
+    bottom: 20px;
+    left: -4px;
+  
+}
+.table .ribbon span{
+    position:absolute;
+    background: #4a60de;
+    width: 200px;
+    padding: 10px 0;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    top: 30px;
+    right: 0px;
+    transform: rotate(-45deg);
+}
